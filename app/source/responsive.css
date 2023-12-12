@@ -1,0 +1,15 @@
+#title-lebar{
+    display: flex;
+}
+#title-kecil{
+    display: none;
+}
+
+@media screen and (max-width: 393px){
+    #title-lebar{
+        display: none;
+    }
+    #title-kecil{
+        display: flex;
+    }
+}
