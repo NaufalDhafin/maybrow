@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2;public/">
-    <title>Loading</title>
+    <title>Penghuni Kelas Terbang</title>
     <!-- LINK -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="app/source/responsive.css">
+    <link rel="stylesheet" href="../app/source/responsive.css">
     <!-- SCRIPT -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -37,35 +36,26 @@
           </button>
         </div>
     </div>
-<div class="load">
-    <span class="loading loading-infinity loading-lg"></span>
-    <p class="pesan">Mengambil Data Server...</p>
-    <!-- 0.0.0.0 = big-update,update-app,total-page. -->
-    <p class="pesan">versi 1.2.2</p>
-</div>
-<style>
-    .navbar{
-        position: fixed;
-        z-index: 1;
-    }
-    .load{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        z-index: 0;
-    }
-    .loading{
-        width: 150px;
-        margin-bottom: -30px;
-    }
-    .pesan{
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: white;
-    }
-</style>
+    <div id="batas1"></div>
+    <div class="overflow-x-auto" style="width: 95%;">
+        <table class="table bg-base-200">
+            <div class="totalPenghuni bg-base-200" style="padding: 3px;width: 170px;text-align: center;border-radius: 5px;">
+                Penghuni : 10 Orang.
+            </div>
+            <div id="batas2"></div>
+          <!-- head -->
+          <thead>
+            <tr>
+              <th style="font-size: 15px;color: rgb(196, 196, 196);">NAMA</th>
+              <th style="text-align: center;font-size: 15px;color: rgb(196, 196, 196);">NIM</th>
+              <th style="text-align: center;font-size: 15px;color: rgb(196, 196, 196);">KELAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php 
+              include '../app/controllers/database.php';
+              include '../app/controllers/penghuni.php';
+            ?>
+          </tbody>
+        </table>
+      </div>
