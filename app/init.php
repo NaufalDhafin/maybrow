@@ -10,3 +10,7 @@ function beranda(){
 function penghuni(){
     include 'views/penghuni.php';
 }
+
+function tugas(){
+    include 'views/tugas.php';
+}

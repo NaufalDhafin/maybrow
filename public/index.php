@@ -12,6 +12,10 @@
             penghuni();
         }
 
+        elseif($pages == 'tugas'){
+            tugas();
+        }
+
         else{
             beranda();
         }
