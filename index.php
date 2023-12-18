@@ -1,5 +1,5 @@
 <?php 
-    require '../app/init.php';
+    require 'app/init.php';
     head();
 
     if(isset($_GET['page'])){

@@ -40,7 +40,7 @@
     width: 100%;
   }
 </style>
-<div class="navbar bg-base-200" style="position:fixed;">
+<div class="navbar bg-base-200" style="position:fixed;z-index:1;">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -60,7 +60,7 @@
   <div class="navbar-end">
     <button class="btn btn-ghost btn-circle">
       <div class="indicator">
-        <img class="mask mask-hexagon-2 bg-base-300" style="width: 60px;" src="imgs/logo.png" />
+        <img class="mask mask-hexagon-2 bg-base-300" style="width: 60px;" src="app/imgs/logo.png" />
       </div>
     </button>
   </div>
